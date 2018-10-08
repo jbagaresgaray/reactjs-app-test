@@ -14,38 +14,38 @@ export class SideBarScreen extends Component {
 					<Nav className="flex-column">
 						<NavItem>
 							<NavLink className="active" href="#">
-								<Icon.Home />
+								<Icon.Home size={16} className="feather"/>
 								Dashboard{" "}
 								<span className="sr-only">(current)</span>
 							</NavLink>
 						</NavItem>
 						<NavItem>
 							<NavLink href="#">
-								<Icon.File />
+								<Icon.File size={16} className="feather"/>
 								Orders
 							</NavLink>
 						</NavItem>
 						<NavItem>
 							<NavLink href="#">
-								<span data-feather="shopping-cart" />
+								<Icon.ShoppingCart size={16} className="feather"/>
 								Products
 							</NavLink>
 						</NavItem>
 						<NavItem>
 							<NavLink href="#">
-								<span data-feather="users" />
+								<Icon.Users size={16} className="feather"/>
 								Customers
 							</NavLink>
 						</NavItem>
 						<NavItem>
 							<NavLink href="#">
-								<span data-feather="bar-chart-2" />
+								<Icon.BarChart2 size={16} className="feather"/>
 								Reports
 							</NavLink>
 						</NavItem>
 						<NavItem>
 							<NavLink href="#">
-								<span data-feather="layers" />
+								<Icon.Layers size={16} className="feather"/>
 								Integrations
 							</NavLink>
 						</NavItem>
@@ -56,31 +56,31 @@ export class SideBarScreen extends Component {
 							className="d-flex align-items-center text-muted"
 							href="#"
 						>
-							<span data-feather="plus-circle" />
+							<Icon.PlusCircle size={16} className="feather"/>
 						</a>
 					</h6>
 					<Nav className="flex-column mb-2">
 						<NavItem>
 							<NavLink href="#">
-								<span data-feather="file-text" />
+								<Icon.FileText size={16} className="feather"/>
 								Current month
 							</NavLink>
 						</NavItem>
 						<NavItem>
 							<NavLink href="#">
-								<span data-feather="file-text" />
+								<Icon.FileText size={16} className="feather"/>
 								Last quarter
 							</NavLink>
 						</NavItem>
 						<NavItem>
 							<NavLink href="#">
-								<span data-feather="file-text" />
+								<Icon.FileText size={16} className="feather"/>
 								Social engagement
 							</NavLink>
 						</NavItem>
 						<NavItem>
 							<NavLink href="#">
-								<span data-feather="file-text" />
+								<Icon.FileText size={16} className="feather"/>
 								Year-end sale
 							</NavLink>
 						</NavItem>
