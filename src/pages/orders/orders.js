@@ -11,7 +11,7 @@ import {
 } from "reactstrap";
 import * as Icon from "react-feather";
 
-export class HomeScreen extends Component {
+export class OrdersScreen extends Component {
 	constructor(props) {
 		super(props);
 
@@ -31,16 +31,14 @@ export class HomeScreen extends Component {
 		return (
 			<div>
 				<div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-					<h1 className="h2">Dashboard</h1>
+					<h1 className="h2">Orders</h1>
 					<ButtonToolbar className="mb-2 mb-md-0">
-						<ButtonGroup className="mr-2" size="sm">
-							<Button outline color="secondary">
-								Share
-							</Button>
-							<Button outline color="secondary">
-								Export
-							</Button>
-						</ButtonGroup>
+						<Button outline size="sm" color="secondary">
+							New Order
+						</Button>
+						<Button outline size="sm" color="secondary">
+							Export
+						</Button>
 						<ButtonDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
 							<DropdownToggle caret size="sm" outline color="secondary"><Icon.Calendar size={16} className="feather"/> This Week</DropdownToggle>
 							<DropdownMenu>
@@ -50,7 +48,7 @@ export class HomeScreen extends Component {
 							</DropdownMenu>
 						</ButtonDropdown>
 					</ButtonToolbar>
-				</div>				
+				</div>
 	          	<div className="table-responsive">
 		            <Table striped="true" size="sm">
 		              <thead>

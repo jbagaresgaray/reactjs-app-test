@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Nav, NavItem, NavLink } from "reactstrap";
-import * as Icon from 'react-feather';
+import * as Icon from "react-feather";
+import { Link } from "react-router-dom";
 
 export class SideBarScreen extends Component {
 	constructor(props) {
@@ -13,39 +14,42 @@ export class SideBarScreen extends Component {
 				<div className="sidebar-sticky">
 					<Nav className="flex-column">
 						<NavItem>
-							<NavLink className="active" href="#">
-								<Icon.Home size={16} className="feather"/>
+							<NavLink tag={Link} activeClassName="active" to="/">
+								<Icon.Home size={16} className="feather" />
 								Dashboard{" "}
 								<span className="sr-only">(current)</span>
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink href="#">
-								<Icon.File size={16} className="feather"/>
+							<NavLink tag={Link} activeClassName="active" to="/orders">
+								<Icon.File size={16} className="feather" />
 								Orders
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink href="#">
-								<Icon.ShoppingCart size={16} className="feather"/>
+							<NavLink tag={Link} activeClassName="active" to="/products">
+								<Icon.ShoppingCart
+									size={16}
+									className="feather"
+								/>
 								Products
 							</NavLink>
 						</NavItem>
 						<NavItem>
 							<NavLink href="#">
-								<Icon.Users size={16} className="feather"/>
+								<Icon.Users size={16} className="feather" />
 								Customers
 							</NavLink>
 						</NavItem>
 						<NavItem>
 							<NavLink href="#">
-								<Icon.BarChart2 size={16} className="feather"/>
+								<Icon.BarChart2 size={16} className="feather" />
 								Reports
 							</NavLink>
 						</NavItem>
 						<NavItem>
 							<NavLink href="#">
-								<Icon.Layers size={16} className="feather"/>
+								<Icon.Layers size={16} className="feather" />
 								Integrations
 							</NavLink>
 						</NavItem>
@@ -56,31 +60,31 @@ export class SideBarScreen extends Component {
 							className="d-flex align-items-center text-muted"
 							href="#"
 						>
-							<Icon.PlusCircle size={16} className="feather"/>
+							<Icon.PlusCircle size={16} className="feather" />
 						</a>
 					</h6>
 					<Nav className="flex-column mb-2">
 						<NavItem>
 							<NavLink href="#">
-								<Icon.FileText size={16} className="feather"/>
+								<Icon.FileText size={16} className="feather" />
 								Current month
 							</NavLink>
 						</NavItem>
 						<NavItem>
 							<NavLink href="#">
-								<Icon.FileText size={16} className="feather"/>
+								<Icon.FileText size={16} className="feather" />
 								Last quarter
 							</NavLink>
 						</NavItem>
 						<NavItem>
 							<NavLink href="#">
-								<Icon.FileText size={16} className="feather"/>
+								<Icon.FileText size={16} className="feather" />
 								Social engagement
 							</NavLink>
 						</NavItem>
 						<NavItem>
 							<NavLink href="#">
-								<Icon.FileText size={16} className="feather"/>
+								<Icon.FileText size={16} className="feather" />
 								Year-end sale
 							</NavLink>
 						</NavItem>
